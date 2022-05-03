@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
 import links from '../routes';
 
+/* eslint-disable */ 
 const Navbar = () => (
   <div className="navbar">
     <h1 className="logo">Bookstore CMS</h1>

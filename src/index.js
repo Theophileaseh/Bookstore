@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 import store from './redux/configureStore';
+import * as actions from './redux/actionTypes';
 import './index.css';
 import App from './App';
 
@@ -15,7 +16,7 @@ root.render(
 );
 
 store.dispatch({
-  type: 'AddBook',
+  type: actions.ADD_BOOK,
   payload: {
     name: 'The Hunger Games',
     category: 'Action',
@@ -26,8 +27,13 @@ store.dispatch({
 });
 
 store.dispatch({
-  type: 'RemoveBook',
+  type: actions.REMOVE_BOOK,
   payload: {
     name: 1,
   },
+});
+
+store.dispatch({
+  type: actions.CHECK_STATUS,
+  payload: 'Under Construction',
 });

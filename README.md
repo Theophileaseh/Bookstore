@@ -1,7 +1,7 @@
 
 # Bookstore Website
 
-> Bookstore is a website where you store books.
+> Bookstore is a website built on React and Redux where you store books.
 
 
 ## Screenshot
@@ -11,7 +11,7 @@
 ## Built With
 
 - Major languages: Javascript, HTML & CSS
-- Frameworks: React
+- Frameworks: React, Redux
 - Technologies used: Webpack, big-js, babel
 
 ## Authors

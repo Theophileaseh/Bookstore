@@ -1,20 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import store from './redux/configureStore';
-import * as actions from './redux/actionTypes';
-import './index.css';
+// import * as actions from './redux/actionTypes';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
+    <Provider store={store}>
       <App />
-    </Router>
+    </Provider>
   </React.StrictMode>,
 );
 
+/*
 store.dispatch({
   type: actions.ADD_BOOK,
   payload: {
@@ -37,3 +37,4 @@ store.dispatch({
   type: actions.CHECK_STATUS,
   payload: 'Under Construction',
 });
+*/

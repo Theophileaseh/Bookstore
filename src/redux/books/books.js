@@ -1,13 +1,13 @@
-const ADD_BOOK = 'ADD_BOOK';
-const REMOVE_BOOK = 'REMOVE_BOOK';
+// Reducers
+
+import * as actions from '../actionTypes';
+import initialData from './initialData';
+
 let lastId = 0;
 
-export const addBook = (book) => ({ type: ADD_BOOK, payload: book });
-export const removeBook = (id) => ({ type: REMOVE_BOOK, payload: { id } });
-
-function bookReducer(state = [], action) {
+const bookReducer = (state = initialData, action) => {
   switch (action.type) {
-    case 'ADD_BOOK':
+    case actions.ADD_BOOK:
       return [
         ...state,
         {
@@ -19,12 +19,12 @@ function bookReducer(state = [], action) {
           chapter: action.payload.chapter,
         },
       ];
-    case 'REMOVE_BOOK':
-      return state.filter((book) => book.id !== action.payload.id);
+    case actions.REMOVE_BOOK:
+      return state.filter((books) => books.id !== action.payload.id);
 
     default:
       return state;
   }
-}
+};
 
 export default bookReducer;

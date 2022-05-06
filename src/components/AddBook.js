@@ -24,7 +24,8 @@ const AddBook = () => {
     <div className="AddBook">
       <h2>Register Book</h2>
       <form className="add-new-book" onSubmit={addBooks}>
-        <input type="text" id="name" placeholder="Book Title" />
+        <input type="text" id="title" placeholder="Book Title" />
+        <input type="text" id="author" placeholder="Book Author" />
         <select id="category">
           <option>Category</option>
           <option>Action</option>

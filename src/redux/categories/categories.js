@@ -1,14 +1,14 @@
-const CHECK_STATUS = 'CHECK_STATUS';
+// Reducers
+import * as actions from '../actionTypes';
 
-export const checkStatus = () => ({ type: CHECK_STATUS });
-
-function categoryReducer(state = [], action) {
+export const CHECK_STATUS = 'CHECK_STATUS';
+const categoryReducer = (state = [], action) => {
   switch (action.type) {
-    case CHECK_STATUS:
+    case actions.CHECK_STATUS:
       return 'Under Construction';
     default:
       return state;
   }
-}
+};
 
 export default categoryReducer;

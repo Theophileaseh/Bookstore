@@ -1,9 +1,32 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Book from './Book';
 
 const AllBooks = () => {
-  const books = [
-    {
+  const books = useSelector((state) => state.bookReducer);
+
+  return (
+    <div className="allbook">
+      {books.map((book) => (
+        <Book
+          key={book.id}
+          id={book.id}
+          name={book.name}
+          author={book.author}
+          category={book.category}
+          percent={book.percent}
+          chapter={book.chapter}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default AllBooks;
+
+// id: books[books.length - 1].id + 1,
+/*
+{
       id: 1,
       name: 'The Hunger Games',
       category: 'Action',
@@ -27,22 +50,4 @@ const AllBooks = () => {
       percent: '0%',
       chapter: 'Introduction',
     },
-  ];
-  return (
-    <div className="allbooks">
-      {books.map((book) => (
-        <Book
-          key={book.id}
-          id={book.id}
-          name={book.name}
-          author={book.author}
-          category={book.category}
-          percent={book.percent}
-          chapter={book.chapter}
-        />
-      ))}
-    </div>
-  );
-};
-
-export default AllBooks;
+  */

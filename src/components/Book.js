@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/actionTypes';
+import { removeBook } from '../redux/books/books';
 
 const Book = (props) => {
   const {
-    id, name, author, category, percent, chapter,
+    id, title, author, category, percent, chapter,
   } = props;
 
   const dispatch = useDispatch();
@@ -18,7 +18,7 @@ const Book = (props) => {
     <div className="book" key={id}>
       <div className="bookName">
         <p className="category">{category}</p>
-        <h2 className="bookName">{name}</h2>
+        <h2 className="bookName">{title}</h2>
         <p className="author">{author}</p>
         <ul className="actions">
           <li className="singleAction">
@@ -50,7 +50,7 @@ const Book = (props) => {
 
 Book.propTypes = {
   id: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   percent: PropTypes.string.isRequired,

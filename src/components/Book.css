@@ -8,7 +8,6 @@
   gap: 40px;
   justify-content: space-between;
   background: #fff;
-
 }
 
 .bookNames {
@@ -49,7 +48,7 @@
   background: #fff;
 }
 
-.right{
+.right {
   border-right: 1px solid #b2cde5;
 }
 
@@ -94,7 +93,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background: #fff;;
+  background: #fff;
 }
 
 .currentChapter {

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getBooks } from '../redux/books/books';
 import Book from './Book';
+import './AllBook.css';
 
 const AllBooks = () => {
   const { books, loading } = useSelector((state) => state.bookReducer);

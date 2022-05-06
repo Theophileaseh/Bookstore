@@ -1,0 +1,53 @@
+.navbar {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  gap: 70px;
+  border-bottom: 2px solid #f1f1f1;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.logo {
+  color: #0290ff;
+  background: #fff;
+}
+
+.menu-links {
+  display: flex;
+  gap: 50px;
+  margin-right: 280px;
+  background: #fff;
+}
+
+.single-link {
+  list-style: none;
+  background: #fff;
+}
+
+.link {
+  text-decoration: none;
+  background: #fff;
+}
+
+.categories {
+  color: #c2c2c2;
+}
+
+.books {
+  color: #707070;
+}
+
+.user {
+  border: none;
+  background: no-repeat;
+}
+
+.usericon {
+  color: white;
+  background: #0290ff;
+  font-size: 25px;
+  border: 1px solid grey;
+  border-radius: 100%;
+}

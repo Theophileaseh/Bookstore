@@ -25,12 +25,8 @@ const AddBook = () => {
     <div className="AddBook">
       <h2 className="add-head">Register Book</h2>
       <form className="add-new-book" onSubmit={addBooks}>
-<<<<<<< HEAD
         <input type="text" id="title" placeholder="Book Title" className="input" />
         <input type="text" id="author" placeholder="Book Author" className="input" />
-=======
-        <input type="text" id="name" placeholder="Book Title" className="input" />
->>>>>>> dev
         <select id="category" className="select">
           <option>Category</option>
           <option>Action</option>

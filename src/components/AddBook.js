@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/actionTypes';
+import './AddBook.css';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -22,17 +23,16 @@ const AddBook = () => {
 
   return (
     <div className="AddBook">
-      <h2>Register Book</h2>
+      <h2 className="add-head">Register Book</h2>
       <form className="add-new-book" onSubmit={addBooks}>
-        <input type="text" id="title" placeholder="Book Title" />
-        <input type="text" id="author" placeholder="Book Author" />
-        <select id="category">
+        <input type="text" id="name" placeholder="Book Title" className="input" />
+        <select id="category" className="select">
           <option>Category</option>
           <option>Action</option>
           <option>Science Fiction</option>
           <option>Economy</option>
         </select>
-        <button type="submit">ADD BOOK</button>
+        <button type="submit" className="submit-btn">ADD BOOK</button>
       </form>
     </div>
   );

@@ -1,5 +1,5 @@
 .navbar {
-  background: #ffffff;
+  background: #fff;
   display: flex;
   align-items: center;
   padding-top: 25px;
@@ -9,6 +9,7 @@
   padding-left: 200px;
   padding-right: 200px;
 }
+
 .logo {
   color: #0290ff;
   background: #fff;

@@ -8,11 +8,11 @@ const AddBook = () => {
 
   const addBooks = (event) => {
     event.preventDefault();
-    const { name, category } = event.target.elements;
+    const { title, author, category } = event.target.elements;
 
     const newBook = {
-      name: name.value,
-      // author: author.value,
+      title: title.value,
+      author: author.value,
       category: category.value,
       // percent: percent.value,
       // chapter: chapter.value,
@@ -25,7 +25,8 @@ const AddBook = () => {
     <div className="AddBook">
       <h2 className="add-head">Register Book</h2>
       <form className="add-new-book" onSubmit={addBooks}>
-        <input type="text" id="name" placeholder="Book Title" className="input" />
+        <input type="text" id="title" placeholder="Book Title" className="input" />
+        <input type="text" id="author" placeholder="Book Author" className="input" />
         <select id="category" className="select">
           <option>Category</option>
           <option>Action</option>

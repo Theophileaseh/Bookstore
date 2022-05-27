@@ -73,6 +73,7 @@
 .main-icon {
   font-size: 54px;
   color: #0290ff;
+  background: #fff;
 }
 
 .percent-complete {
@@ -81,6 +82,7 @@
 
 .percent {
   font-size: 23px;
+  background: #fff;
 }
 
 .completed {

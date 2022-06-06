@@ -34,9 +34,9 @@ export const removeBook = (id) => (dispatch) => {
 
 export const registerNewBook = (newBook) => (dispatch) => {
   fetch(url, {
-    method: 'POST',
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     body: JSON.stringify(newBook),
   })

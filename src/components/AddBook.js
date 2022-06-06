@@ -11,10 +11,7 @@ const AddBook = () => {
 
     const newBook = {
       name: name.value,
-      // author: author.value,
       category: category.value,
-      // percent: percent.value,
-      // chapter: chapter.value,
     };
 
     dispatch(addBook(newBook));

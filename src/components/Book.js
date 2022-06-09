@@ -39,7 +39,10 @@ const Book = (props) => {
           <FaCircleNotch className="main-icon" />
         </div>
         <div className="percent-complete">
-          <p className="percent">{percent}</p>
+          <p className="percent">
+            98%
+            {percent}
+          </p>
           <p className="completed">Completed</p>
         </div>
       </div>

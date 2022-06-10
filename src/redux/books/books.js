@@ -3,7 +3,7 @@
 import * as actions from '../actionTypes';
 import initialData from './initialData';
 
-const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/peTT8nDbEBrfkaUWWEJ2/books';
+const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/TgwrnTOjnQa4qiNfFXCx/books';
 
 export const getBooks = () => (dispatch) => {
   dispatch(actions.getBooksLoading());

@@ -117,3 +117,9 @@
   padding-right: 20px;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  .book {
+    flex-direction: column;
+  }
+}

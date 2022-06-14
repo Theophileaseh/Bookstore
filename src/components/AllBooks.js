@@ -7,7 +7,7 @@ import './AllBook.css';
 const AllBooks = () => {
   const { books, loading } = useSelector((state) => state.bookReducer);
   const dispatch = useDispatch();
-  console.log(books);
+  // console.log(books);
 
   useEffect(() => {
     dispatch(getBooks());

@@ -8,6 +8,7 @@
   border-bottom: 2px solid #f1f1f1;
   padding-left: 200px;
   padding-right: 200px;
+  justify-content: space-between;
 }
 
 .logo {
@@ -51,4 +52,30 @@
   font-size: 25px;
   border: 1px solid grey;
   border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .menu-links {
+    gap: 10px;
+    margin-right: 0;
+  }
+
+  .link {
+    font-size: 13px;
+  }
+
+  .usericon {
+    font-size: 18px;
+  }
+
 }

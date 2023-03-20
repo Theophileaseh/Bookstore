@@ -11,11 +11,10 @@ const AddBook = () => {
     const { title, author, category } = event.target.elements;
 
     const newBook = {
+      name: name.value,
       title: title.value,
       author: author.value,
       category: category.value,
-      // percent: percent.value,
-      // chapter: chapter.value,
     };
 
     dispatch(addBook(newBook));

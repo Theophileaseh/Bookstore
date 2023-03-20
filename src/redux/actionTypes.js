@@ -2,8 +2,11 @@
 
 export const CHECK_STATUS = 'CHECK_STATUS';
 export const ADD_BOOK = 'ADD_BOOK';
-export const REMOVE_BOOK = 'REMOVE_BOOK';
+export const GET_BOOKS_SUCCESS = 'bookstore/GET_BOOKS_SUCCESS';
+export const GET_BOOKS_FAILURE = 'bookstore/GET_BOOKS_FAILURE';
+export const GET_BOOKS_LOADING = 'bookstore/GET_BOOKS_LOADING';
 
 export const addBook = (book) => ({ type: ADD_BOOK, payload: book });
-export const removeBook = (id) => ({ type: REMOVE_BOOK, payload: { id } });
-export const checkStatus = () => ({ type: CHECK_STATUS });
+export const getBooksSuccess = (books) => ({ type: GET_BOOKS_SUCCESS, payload: books });
+export const getBooksFailure = (errMessage) => ({ type: GET_BOOKS_FAILURE, payload: errMessage });
+export const getBooksLoading = () => ({ type: GET_BOOKS_LOADING });

@@ -1,0 +1,125 @@
+.book {
+  border: 2px solid #f1f1f1;
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.bookNames {
+  background: #fff;
+}
+
+.category {
+  color: #8c8c8c;
+  font-weight: 800;
+  font-size: 15px;
+  background: #fff;
+}
+
+.bookName {
+  font-size: 20px;
+  font-weight: 600;
+  background: #fff;
+  margin: 10px 0;
+}
+
+.author {
+  color: #b2cde5;
+  font-size: 15px;
+  background: #fff;
+}
+
+.actions {
+  display: flex;
+  margin-top: 10px;
+  background: #fff;
+}
+
+.singleAction {
+  list-style: none;
+  color: #b2cde5;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #fff;
+}
+
+.right {
+  border-right: 1px solid #b2cde5;
+}
+
+.btn {
+  border: none;
+  color: #b2cde5;
+  margin: 3px;
+  background: #fff;
+}
+
+.main-completed {
+  display: flex;
+  background: #fff;
+  gap: 20px;
+  align-items: center;
+}
+
+.icon-complete {
+  background: #fff;
+}
+
+.main-icon {
+  font-size: 54px;
+  color: #0290ff;
+  background: #fff;
+}
+
+.percent-complete {
+  background: #fff;
+}
+
+.percent {
+  font-size: 23px;
+  background: #fff;
+}
+
+.completed {
+  color: grey;
+  font-size: 15px;
+  background: #fff;
+}
+
+.update {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #fff;
+}
+
+.currentChapter {
+  color: grey;
+  text-transform: capitalize;
+  background: #fff;
+}
+
+.chapter {
+  font-size: 18px;
+}
+
+.updateProcess {
+  border: none;
+  background: #0290ff;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .book {
+    flex-direction: column;
+  }
+}

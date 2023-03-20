@@ -4,7 +4,6 @@ import AddBook from '../components/AddBook';
 
 const Books = () => (
   <>
-    <h2>Books page</h2>
     <AllBooks />
     <AddBook />
   </>
